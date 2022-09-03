@@ -9,10 +9,7 @@ function App() {
     const travelReport = data.map(function (item) {
         return <Card
             key={item.id}
-            img={item.imgUrl}
-            location={item.location}
-            description={item.description}
-            title={item.title}
+            {...item}
 
         />
     })
